@@ -1,0 +1,16 @@
+<span class="material-icons">
+payments
+</span>
+
+<span class="material-icons">
+laptop_windows
+</span>
+
+<span class="material-icons">
+location_on
+</span>
+
+1 year warranty
+<span class="material-icons">
+local_police
+</span>
