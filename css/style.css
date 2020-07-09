@@ -92,6 +92,26 @@ body {
   color: var(--second-color);
 }
 
+.btn {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 0.8rem 2.5rem;
+}
+
+.btn:hover {
+  background-color: var(--second-color);
+  border: 1px solid var(--second-color);
+}
+
+.btn_secondary {
+  background-color: var(--main-color);
+}
+
 /* SITE HEADER */
 .site_header {
   height: 60rem;
@@ -111,7 +131,6 @@ body {
 .site_header:after {
   content: "";
   background: url("../img/arrow_downward.svg") no-repeat center;
-
   display: block;
   width: 5rem;
   height: 5rem;
@@ -119,6 +138,7 @@ body {
   position: absolute;
   bottom: -2.5rem;
   left: 50%;
+  cursor: pointer;
 }
 
 /* MENU BAR */
@@ -155,9 +175,14 @@ body {
   color: var(--second-color);
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+}
+
 .menu_list {
   display: flex;
-  margin: 0;
+  margin: 0 2rem 0 0;
 }
 
 .menu_item,
@@ -169,9 +194,9 @@ body {
 
 .menu_item a {
   height: 6rem;
-  width: 12rem;
+  width: 10rem;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   text-align: center;
   justify-content: center;
@@ -179,7 +204,7 @@ body {
 }
 
 .SubMenu_item a {
-  width: 12rem;
+  width: 10rem;
   color: var(--dark-grey);
   padding: 0 1rem;
 }
@@ -254,21 +279,21 @@ body {
 .hero_card-content {
   display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 40% calc(60% - 1rem);
   background-color: rgba(255, 255, 255, 0.2);
   width: 23rem;
   height: 12rem;
-  margin: 0 0.5rem;
+  gap: 1rem;
 }
 
 .hero_card-content:after {
   content: "";
   height: 0.2rem;
-  width: 21rem;
+  width: 23rem;
   background-color: #ffffff;
-  margin: 0 1rem 0 1rem;
+  margin: 0;
   position: relative;
-  top: -0.2rem;
+  top: -1.2rem;
 }
 
 .hero_card-content:hover {
@@ -323,5 +348,5 @@ body {
 .hero_card-text {
   font-size: 1.2rem;
   color: #ffffff;
-  margin: 0 2rem 0 1rem;
+  margin: 0 2rem 2rem 1rem;
 }
