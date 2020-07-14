@@ -180,6 +180,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .menu_bar-items a {
@@ -283,14 +284,14 @@ body {
   }
 
   label {
+    display: flex;
     position: relative;
     z-index: 1100;
     font-size: 2rem;
     border: none;
-    color: var(--dark-grey);
-    height: 2rem;
-    top: 1rem;
     cursor: pointer;
+    align-content: center;
+    color: #ffffff;
   }
 
   #toggle {
@@ -302,9 +303,9 @@ body {
     background-color: #ffffff;
     width: 100vw;
     position: absolute;
-    top: -1rem;
+    top: -2rem;
     right: -2rem;
-    padding: 6rem 0;
+    padding: 5rem 0;
     z-index: 1000;
   }
 
@@ -323,6 +324,14 @@ body {
 
   .menu_list-mobile:last-child {
     border-bottom: 0.1rem solid #bdbdbd;
+  }
+
+  #toggle:checked + label {
+    color: var(--dark-grey);
+  }
+
+  #toggle:checked ~ .mobile_menu {
+    display: block;
   }
 }
 
